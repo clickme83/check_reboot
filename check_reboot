@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -f /var/run/reboot-required ]; 
+  then
+    echo "1 \"Reboot\" - Computer has a reboot pending."
+  else
+    echo "0 \"Reboot\" - No reboot pending"
+fi
